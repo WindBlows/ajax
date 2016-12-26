@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<meta charset="utf-8">
+<body>
+<form action="" method="post"></form>
+<p>用户名：<input type="text" name="username"><span id="reg"></span></p>
+<p>邮箱：<input type="text" name="email"><span id="email"></span></p>
+<p><input type="submit" ></p>
+</body>
+<script type="text/javascript">
+	var user = document.getElementsByName('username')[0];
+	user.onblur = function() {
+		//alert(this.value);
+		var url = './1.php?un=' + this.value;
+		var reg = document.getElementById('reg');
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4) {
+				if (this.responseText == 0) {
+					reg.innerHTML = '<font color="green">可用</font>';
+				} else {
+					reg.innerHTML = '<font color="red">不可用</font>';
+				}
+			}
+		}
+		xhr.open('get', url, true);
+		xhr.send(null);
+	}
+</script>
+</html>
