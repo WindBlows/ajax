@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			padding: 0;
+			font-size: 10pt;
+		}
+		.topmenu
+		{
+			display: block;
+			width: 220px;
+			border: 2px solid #e4393c;
+			margin: 0;
+			padding: 0;
+		}
+		.toptitle
+		{
+			height: 40px;
+			line-height: 40px;
+			text-align: left;
+			font-size: 11pt;
+			font-weight: bold;
+			color: white;
+			background: #e4393c;
+			padding-left: 20px;
+		}
+		.topmenu li
+		{
+			height: 30px;
+			line-height: 30px;
+			font-size: 11pt;
+			list-style-type: none;
+			text-align: left;
+			padding-left: 8px;
+			z-index: 3;
+			background-image: url(1.png);
+			background-repeat: no-repeat;
+			background-position: right;
+		}
+		.topmenu li a
+		{
+			text-decoration: none;
+			color: #313131;
+		}
+		.topmenu li a:hover
+		{
+			text-decoration: underline;
+			font-weight: bold;
+			color: #e4393c;
+		}
+		.topmenu li:hover
+		{
+			border: 1px solid #DDD;
+			border-right: 0;
+			box-shadow: 0 0 8px #DDD;
+			-moz-box-shadow: 0 0 8px #DDD;
+			-webkit-box-shadow: 0 0 8px #DDD;
+			background-image: none;
+		}
+		.submenu
+		{
+			display: none;
+			width: 715px;
+			left: 220px;
+			position: absolute;
+			top: 40px;
+			border: 1px solid #DDD;
+			z-index: 4;
+			background: white;
+			box-shadow: 0 0 8px #DDD;
+			-moz-box-shadow: 0 0 8px #DDD;
+			-webkit-box-shadow: 0 0 8px #DDD;
+		}
+		.leftdiv
+		{
+			background: white;
+			float: left;
+			width: 490px;
+			margin: 5px;
+		}
+		.rightdiv
+		{
+			background: white;
+			float: left;
+			width: 200px;
+			margin: 5px;
+
+		}
+		.topmenu li:hover .submenu
+		{
+			display: block;
+		}
+		.topmenu li:hover span
+		{
+			background: white;
+			display: inline-block;
+			z-index: 20;
+			width: 20px;
+			height: 30px;
+			float: right;
+			position: relative;
+		}
+		.leftdiv dl
+		{
+			display: block;
+			border-bottom: 1px solid #EEE;
+			padding-bottom: 6px;
+			overflow: hidden;
+		}
+		.leftdiv dl dt
+		{
+			display: block;
+			float: left;
+			width: 60px;
+			text-align: right;
+			height: 22px;
+			line-height: 22px;
+			padding-right: 6px;
+		}
+		.leftdiv dl dt a
+		{
+			color: #e4393c;
+			font-weight: bold;
+			text-decoration: underline;
+			font-size: 10pt;
+		}
+		.leftdiv dl dd
+		{
+			display: block;
+			overflow: hidden;
+		}
+		.leftdiv dl dd a
+		{
+			display: block;
+			float: left;
+			border-left: 1px solid #CCC;
+			color: #737373;
+			font-size: 9pt;
+			padding: 0 8px;
+			height: 14px;
+			line-height: 14px;
+			margin: 4px 0;
+		}
+		.rightdiv dl dd
+		{
+			margin: 3px 0;
+		}
+		.rightdiv dl dt
+		{
+			color: #e4393c;
+			font-weight: bold;
+			font-size: 10pt;
+		}
+		.rightdiv dl dd a
+		{
+			font-size: 9pt;
+			color: #737373;
+			line-height: 22px;
+		}
+		.rightdiv dl dd a:hover
+		{
+			color: #e4393c;
+			font-weight: normal;
+		}
+
+	</style>
+</head>
+<body>
+<ul class="topmenu">
+	<div class="toptitle">全部商品分类</div>
+	<li><a href="#">图书、音像、数字商品</a><span></span>
+		<div class="submenu">
+			<div class="leftdiv">
+				<dl>
+					<dt><a href="#">电子书</a></dt>
+					<dd>
+						<a href="#">免费</a>
+						<a href="#">小说</a>
+						<a href="#">文学</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+						<a href="#">经管</a>
+
+					</dd>
+				</dl>
+			</div>
+			<div class="rightdiv">
+				<dl>
+					<dd><a href="#"><img src="2.png" width="194" height="140"></a></dd>
+					<dd>图片</dd>
+				</dl>
+				<dl>
+					<dt>推荐品牌</dt>
+					<dd><a href="#">品牌</a></dd>
+					<dd><a href="#">品牌</a></dd>
+					<dd><a href="#">品牌</a></dd>
+					<dd><a href="#">品牌</a></dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+	<li><a href="#">家用电器</a>
+		<div class="submenu">
+			<div class="leftdiv">
+				<dl>
+					<dt><a href="#">大家电</a></dt>
+					<dd>
+						<a href="#">电视</a>
+						<a href="#">冰箱</a>
+						<a href="#">洗衣机</a>
+						<a href="#">空调</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="rightdiv">
+				<dl>
+					<dd><a href="#"><img src="2.png" width="194" height="140"></a></dd>
+					<dd>图片</dd>
+				</dl>
+				<dl>
+					<dt>推荐品牌</dt>
+					<dd><a href="#">品牌</a></dd>
+					<dd><a href="#">品牌</a></dd>
+					<dd><a href="#">品牌</a></dd>
+					<dd><a href="#">品牌</a></dd>
+				</dl>
+			</div>
+		</div>
+	</li>
+	<li><a href="#">手机、数码</a></li>
+	<li><a href="#">电脑办公</a></li>
+	<li><a href="#">家居、家装、厨具</a></li>
+	<li><a href="#">服饰内衣、珠宝首饰</a></li>
+	<li><a href="#">个护化妆</a></li>
+	<li><a href="#">鞋靴、箱包</a></li>
+	<li><a href="#">运动户外</a></li>
+	<li><a href="#">汽车用品</a></li>
+	<li><a href="#">母婴、玩具乐器</a></li>
+</ul>
+</body>
+</html>
